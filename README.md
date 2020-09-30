@@ -1,6 +1,8 @@
 EhBASIC for Rockwell R6501/R6511
 --------------------------------
 
+**CAUTION!** `master` is still a work-in-progress branch for this project, consider anything on it highly experimental!
+
 This repository contains a version of the EhBASIC interpreter for the Rockwell R6501 and R6511 single-chip microprocessors. These processors are 6502-like, but contain some significant differences:
 
 * Zero page is internal to the processor, and smaller than 256 bytes
