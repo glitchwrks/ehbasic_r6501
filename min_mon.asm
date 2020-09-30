@@ -150,10 +150,10 @@ LAB_vec
 
 IRQ_CODE
 	PHA			; save A
-	LDA	IrqBase		; get the IRQ flag byte
+	LDA	IRQBASE		; get the IRQ flag byte
 	LSR			; shift the set b7 to b6, and on down ...
-	ORA	IrqBase		; OR the original back in
-	STA	IrqBase		; save the new IRQ flag byte
+	ORA	IRQBASE		; OR the original back in
+	STA	IRQBASE		; save the new IRQ flag byte
 	PLA			; restore A
 	RTI
 
@@ -161,10 +161,10 @@ IRQ_CODE
 
 NMI_CODE
 	PHA			; save A
-	LDA	NmiBase		; get the NMI flag byte
+	LDA	NMIBASE		; get the NMI flag byte
 	LSR			; shift the set b7 to b6, and on down ...
-	ORA	NmiBase		; OR the original back in
-	STA	NmiBase		; save the new NMI flag byte
+	ORA	NMIBASE		; OR the original back in
+	STA	NMIBASE		; save the new NMI flag byte
 	PLA			; restore A
 	RTI
 
