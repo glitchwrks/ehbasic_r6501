@@ -19,9 +19,9 @@ low level handling of hardware devices. It also retains most of the powerful
 high level instructions from similar BASICs.
 ```
 
-### Copyright
+### Copyright and Licensing
 
-From the original source on which this work is based:
+From the original EhBASIC source on which this work is based:
 
 ```
 EhBASIC is free but not copyright free. For non commercial use there is only one
@@ -35,3 +35,5 @@ for conditions.
 ```
 
 Since Lee Davidson has since passed away, we believe that we're in the right to distribute our modifications to EhBASIC under the GNU GPL v3. Mr. Davidson's work of course retains its original license. Our first commit is the unmodified v2.22 EhBASIC source code.
+
+Additionally, our `Makefile` comes from Jeff Tranter's port of EhBASIC to the Replica-1 and other platforms, [which can be found here](https://github.com/jefftranter/6502/tree/master/asm/ehbasic). Jeff didn't provide a license with his code, but our modifications to his `Makefile` are released under the GNU GPL v3.
